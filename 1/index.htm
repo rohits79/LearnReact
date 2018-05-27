@@ -8,8 +8,10 @@
     <body>
         <div id="container"></div>
         <script type="text/babel">
-            var location = document.getElementById("container");
-            ReactDOM.render(<h1>Test</h1>, location);
+            console.log('test');
+            var location = document.getElementById("#container");
+            var destination = document.querySelector("#container");
+            ReactDOM.render(<h1>Test</h1>, destination);
         </script>
     </body>
 </html>

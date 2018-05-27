@@ -1,16 +1,22 @@
 <html>
     <head>
-        <title>Test</title>
+        <title>Component</title>
         <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
         <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
         <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
     </head>
     <body>
         <div id="container"></div>
+        <script src="Hello.js" type="text/babel"></script>
         <script type="text/babel">
-            console.log('test');
             var destination = document.querySelector("#container");
-            ReactDOM.render(<h1>Test</h1>, destination);
+            ReactDOM.render(<div>
+                <HelloWorld message="test"></HelloWorld>
+                <HelloWorld message="test2"></HelloWorld>
+                <HelloWorld message="test3"></HelloWorld>
+                <HelloWorld message="test4"></HelloWorld>
+                </div>
+                , destination);
         </script>
     </body>
 </html>
